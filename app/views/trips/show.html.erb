@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html {
+    min-height: 100%; /* This is required to ensure that the gradient stretches across the whole page */
+}
+
+body { #pink
+    background: -webkit-linear-gradient(#FF1C76, #FECDE1);
+    background: -o-linear-gradient(#FF1C76, #FECDE1);
+    background: -moz-linear-gradient(#FF1C76, #FECDE1);
+    background: linear-gradient(#FF1C76, #FECDE1);
+    background-color: #93B874;
+
+}
+</style>
+</head>
+<body>
+
+<p id="notice"><%= notice %></p>
+
+<%= link_to 'Edit', edit_trip_path(@trip) %> |
+<%= link_to 'Back', trips_path %>
+
+</body>
+</html>
