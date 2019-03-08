@@ -3,6 +3,7 @@ class TripsController < ApplicationController
 
     def index
         @trips = Trip.all
+        @trips = @trips.sort_by {|obj| obj.arrive_date }
     end
 
     def show
